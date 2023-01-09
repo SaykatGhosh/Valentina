@@ -1,0 +1,665 @@
+/* Google Fonts linkup  */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* -------- Common Css Start -------- */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol, ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* -------- Common Css End -------- */
+
+/* ---------- Navbar part start ---------- */
+#navbar{
+    position: absolute;
+    width: 100%;
+}
+.nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.nav_main ul{
+    display: flex;
+    column-gap: 27px;
+}
+.nav_main ul li a{
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform:capitalize;
+    position: relative;
+} 
+.nav_main ul li a:hover{
+    color: #d50a51;
+    transition: all linear 0.3s;
+}
+.nav_main ul li a::after{
+    position: absolute;
+    content: url(../images/menu_hover_icon.png);
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.nav_main ul li a:hover::after{
+    opacity: 1;
+    transition: all linear  0.3s;
+}
+
+.common_btn{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 15px 21px;
+    border: 1px solid #d50a51;
+    color: #d50a51;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all linear 0.3s;
+}
+.common_btn:hover{
+    background-color: #d50a51;
+    color: #fff;
+    border: 1px solid #d50a51;
+}
+.common_btn i{
+    margin-right: 10px;
+}
+
+/* ---------- Navbar part End ---------- */
+
+/* ---------- Banner part Start ---------- */
+#banner{
+    background-color: #fdeff5;
+    padding: 228px 0 145px 0;
+}
+.banner_wrapper{
+    display: flex;
+    column-gap: 66px;
+}
+.banner_img{
+    width: 50%;
+    position: relative;
+}
+.banner_img img{
+    position: absolute;
+    top: -103px;
+    left: 0;
+}
+.banner_text{
+    width: 50%;
+    text-align: center;
+}
+.banner_text h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 61px;
+    font-weight: 600;
+    color: #8a5e3b;
+    text-transform: uppercase;
+    line-height: 0;
+}
+.banner_text h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 84px;
+    font-weight: 400;
+    color: #d50a51;
+    padding-bottom: 29px;
+   
+}
+.banner_text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    font-weight: 400;
+    padding-bottom: 62px;
+}
+
+
+/* ---------- Banner part End ---------- */
+
+/* History part Start here */
+#history{
+    padding: 100px 0;
+}
+.history_wrapper{
+    display: flex;
+    column-gap: 30px;
+}
+.history_img{
+    width: 570px;
+}
+.history_img img{
+    width: 100%;
+    overflow: hidden;
+}
+.common_content{
+    width: 570px;
+}
+.common_heading{
+    margin: 30px 0 60px 54px;
+    position: relative;
+}
+.common_heading::after{
+    position: absolute;
+    content: url(../images/love.png);
+    left: -49px;
+    top: -25px;
+}
+.common_heading h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #666666;
+    text-transform: capitalize;
+}
+.common_heading h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: #d50a51;
+    text-transform: capitalize;
+}
+.common_content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 26px;
+    padding-bottom: 35px;
+}
+
+/* History part End here */
+
+/* Gift part Start here */
+#gift{
+    padding:60px 0;
+    background-color: #fffae1;
+}
+.gift_wrapper{
+    display: flex;
+    column-gap: 30px;
+}
+.gift_wrapper .common_content{
+    width: 570px;
+}
+.gift_wrapper .gift_img{
+    width: 570px;
+    position: relative;
+}
+.extra_pg{
+    padding-bottom: 0px;
+}
+.gift_img img{
+    position: absolute;
+    top: -205px;
+    left: -140px;
+}
+.send_proposal{
+    margin-left: 20px;
+}
+
+/* Gift part End here */
+
+
+
+/* Ticket part start here */
+
+#ticket{
+    padding: 116px 0 100px 0;
+}
+.ticket_wrapper{
+    display: flex;
+    column-gap: 30px;
+}
+.ticket_wrapper .common_content{
+    width: 570px;
+    text-align: right;
+}
+.ticket_img{  
+    width: 570px;
+    position: relative;
+}
+.ticket_img img{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+}
+.ticket_wrapper .common_content .common_heading{
+    
+    margin: 30px 54px 60px 0;
+    position: relative;   
+}
+.ticket_wrapper .common_content .common_heading::after{
+    position: absolute;
+    content: url(../images/love_right.png);
+    top: -33px;
+    right: -52px;
+}
+
+
+/* Ticket Part End Here  */
+
+/* Offer part start here  */
+#offer{
+    padding: 60px 0 ;
+    background: radial-gradient( #ffffff,#f6ebf0) ;
+}
+.offer_wrapper{
+    display: flex;
+    column-gap: 30px;
+}
+.offer_wrapper .common_content{
+    width: 370px;
+}
+.offer_card{
+    width: 770px;
+}
+.card_wrapper{
+    display: flex;
+    column-gap: 30px;
+}
+.card{
+    width: 370px;
+    padding: 30px;
+    border-right: transparent;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.card:hover{
+    cursor: pointer;
+    border-right: 3px solid #d50a51;
+    background-color: #f1f1f1;
+    transition: all linear 0.3s;
+}
+.card_heading{
+    display: flex;
+    column-gap: 22px;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+.card_heading i{
+    font-size: 50px;
+    color: #d50a51;
+}
+.card_heading h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #d50a51;
+}
+.card p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+/* Offer part End here  */
+
+/* capture part start here  */
+#capture{
+    padding: 100px 0;
+}
+.capture_wrapper{
+    display: flex;   
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.gal_main{
+    width: 740px;
+}
+.gal{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.gal_item{
+    width: 350px;
+    height: 400px;
+    position: relative;
+}
+.gal_item img{
+    width: 100%;
+    height: 100%;
+}
+
+.capture_content .common_content{
+    width: 370px;   
+    text-align: right;
+}
+.capture_content .common_content .common_heading{
+    margin: 30px 54px 60px 0;
+    position: relative;   
+}
+.capture_content .common_content .common_heading::after{
+    position: absolute;
+    content: url(../images/love_right.png);
+    top: -33px;
+    right: -52px;
+}
+/* capture part End here  */
+
+
+
+/* Counting part start here  */
+#counting{
+    background-image: url(../images/counting_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+.count_wrapper{
+    display: flex;
+    column-gap: 230px;
+    justify-content: center;
+    align-items: center;
+}
+.count_item{
+    text-align: center;
+    margin-top: 17px;
+}
+.count_item:nth-child(2){
+    margin-top: 30px;
+}
+.count_item:nth-child(4){
+    margin-top: 30px;
+}
+.count_item h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    color: #d50a51;
+}
+.count_item h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #444444;
+}
+/* Counting part END here  */
+
+/* testimonial Part start here */
+#testimonial{
+    padding: 140px 0 154px 0;
+    position: relative;
+}
+.testimonial_wrapper{
+    display: flex;
+    column-gap: 30px;
+    position: relative;
+}
+
+.testimonial_wrapper::after{
+    position: absolute;
+    content: url(../images/testimonial_love.png);
+    top: -42px;
+    left: -39px;
+}
+.testimonial_wrapper::before{
+    position: absolute;
+    content: url(../images/testimonial_love2.png);
+    bottom: -45px;
+    right: -40px;
+}
+
+
+
+
+.testimonial_part{
+    width: 570px;
+    background-color: #fffae2;
+    padding: 40px 30px 30px 30px ;
+}
+
+.testimonial_part p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #444444;
+    padding-bottom: 20px;
+}
+
+.testimonial_info_wrapper{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.designation_info h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+    padding-bottom: 10px;
+} 
+.designation_info h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.testi_arrows{
+    position: relative;
+}
+
+.left_arrows i{
+    position: absolute;
+    content: "";
+    top: 130px;
+    left: -150px;
+    font-size: 40px;   
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+.left_arrows i:hover{
+    color: #d50a51;
+}
+.right_arrows i{
+    position: absolute;
+    content: "";
+    top: 130px;
+    right: -150px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+.right_arrows i:hover{
+    color: #d50a51;
+    
+}
+
+/* testimonial Part End here */
+
+/* news Part start here */
+#newsletter{
+    position: relative;  
+    top: 50px;
+}
+
+.news_wrapper{
+    padding: 30px 0;
+    background-color: #d50a51;
+    border-radius: 100px;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.news_content{
+    width: 370px;
+    display: flex;
+    column-gap: 10px;
+}
+.input_fuild{
+    width: 570px;
+}
+.news_text h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.news_text h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+.text_input{
+    padding: 12px 100px 12px 12px;
+    outline: none;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+::placeholder{
+    color: #fff;
+}
+.email_submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.submit_btn{
+    padding: 12px;
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* news Part End here */
+
+/* footer part start here */
+#footer{
+    padding: 85px 0 30px 0;
+    background: radial-gradient(#fff, #fddceb);
+}
+.footer_logo{
+    text-align: center;
+}
+.footer_info{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fot_location_info{
+    width: 256px;
+    display: flex;
+    column-gap: 21px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 57px;
+}
+.fot_info_icon{
+    border-radius: 50%;
+    padding: 13px 15px;
+    background-color: #d50a51;
+    font-size: 20px;
+    color: #fff;
+}
+.cmn_fot_para{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+}
+.fot_mail_info{
+    width: 251px;
+    display: flex;
+    column-gap: 21px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 147px;
+}
+.fot_website_info{
+    width: 289px;
+    display: flex;
+    column-gap: 21px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0 130px;
+}
+.social_media_icon{
+    padding-top:61px;
+    text-align: center;
+}
+.social_media_icon h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #d50a51;
+    text-transform: capitalize;
+}
+.fot_social_icon{
+    padding-top: 31px;
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.fot_social_icon a{
+    padding: 10px 14px;
+    border: 1px solid #d50a51;
+    border-radius: 50%;
+    color: #d50a51;
+    background: transparent;
+}
+.fot_social_icon a:hover{
+    background-color: #d50a51;
+    color: #fff;
+    transition: all linear 0.3s;
+}
+/* footer part end here */
+
+/* copyright part start here */
+.copyright{
+    padding: 20px 0 23px 0;
+    background-color:#fce1ed;
+    background: radial-gradient(#fff, #fce1ed);
+    text-align: center;
+}
+.copyright p{
+    font-size: 14px;
+    color: #444444;
+}
+.copyright span{
+    color: #d50a51;
+}
+
+/* copyright part end here */
+/* 
+font-family: 'Great Vibes', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+
